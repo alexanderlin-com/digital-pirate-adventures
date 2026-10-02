@@ -26,13 +26,4 @@ public class Galleon extends Ship{
 
     }
 
-    @Override
-    public void turn()
-    {
-        System.out.println("turn");
-    }
-
-
-
-
 }

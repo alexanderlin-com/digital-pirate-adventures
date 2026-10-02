@@ -27,12 +27,4 @@ public class Frigate extends Ship{
 
     }
 
-    @Override
-    public void turn()
-    {
-        System.out.println("turn");
-    }
-
-
-
 }

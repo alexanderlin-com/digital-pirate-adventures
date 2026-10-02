@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Storm {
-    public static Scanner scan = new Scanner(System.in);
+    public static Scanner scan = Main.scan;
     public static Random roll = new Random();
 
     public static void intro(){

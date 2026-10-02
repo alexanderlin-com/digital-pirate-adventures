@@ -2,7 +2,7 @@ package pirate;
 
 import java.util.Scanner;
 public class Ship {
-    public static Scanner scan = new Scanner(System.in);
+    public static Scanner scan = Main.scan;
 
     public static String playerName;
     public static String shipName;
@@ -194,14 +194,13 @@ public class Ship {
         this.armor -= nerf;
     }
 
-
-    public void turn()
+    public void nerfSpeed(int nerf)
     {
-
+        this.speed -= nerf;
     }
 
     public void healthCheck() {
-        if (health == 0) {
+        if (health <= 0) {
             System.out.println("\n\nYou are dead.\n\n*RE4 Leon death sound*");
             System.exit(0);
 
@@ -209,7 +208,7 @@ public class Ship {
     }
 
     public void bandwidthCheck()    {
-        if(bandwidth == 0)
+        if(bandwidth <= 0)
         {
             System.out.println("We've stretched our bandwidth thin! Our ship be takin' damage!");
             takeDamage(Main.d20());

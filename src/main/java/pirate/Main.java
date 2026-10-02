@@ -26,6 +26,7 @@ public class Main {
             Storm.wave(player);
             Storm.end();
             Fight.intro();
+            Fight.run(player, enemy);
 
 
             Encounter.pirateBayIntro();
@@ -41,7 +42,6 @@ public class Main {
                     Ready to embark on this digital adventure? (y/n)""");
         }
         public static void introPlayerResponse() {
-            Scanner scan = new Scanner(System.in);
             String response = scan.nextLine();
             switch (response) {
                 case "y":

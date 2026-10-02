@@ -6,7 +6,7 @@ import java.util.Random;
 public class Encounter {
 
     private static final Random roll = new Random();
-    private static final Scanner scan = new Scanner(System.in);
+    private static final Scanner scan = Main.scan;
     public static boolean textbook = false;
     public static boolean library = false;
 
