@@ -1,3 +1,5 @@
+package pirate;
+
 import java.util.Scanner;
 public class Ship {
     public static Scanner scan = new Scanner(System.in);

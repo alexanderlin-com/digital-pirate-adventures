@@ -1,3 +1,5 @@
+package pirate;
+
 public class Ending {
 
 

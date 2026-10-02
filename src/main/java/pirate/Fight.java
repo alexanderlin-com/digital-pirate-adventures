@@ -1,3 +1,5 @@
+package pirate;
+
 import java.util.Random;
 public class Fight {
     private static final Random roll = new Random();

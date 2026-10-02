@@ -23,9 +23,23 @@ Thank you for your understanding and support!
 ## How to Play
 
 1. Clone this repository to your local machine.
-2. Run "Main.java" in your IDE of choice.
+2. Open the project in your IDE of choice (source lives under `src/main/java/pirate`), or build and run it with Maven:
+   ```
+   mvn compile exec:java
+   ```
+   Or without Maven:
+   ```
+   javac -d out src/main/java/pirate/*.java
+   java -cp out pirate.Main
+   ```
 3. Follow the given prompts to make choices and progress through the adventure.
 4. Have fun (mandatory).
+
+## Running Tests
+
+```
+mvn test
+```
 
 ## Disclaimer
 

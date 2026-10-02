@@ -1,3 +1,5 @@
+package pirate;
+
 public class Galleon extends Ship{
 
     public Galleon(int health, int bandwidth, int speed, int dodge, double armor,  int accuracy, double damage)

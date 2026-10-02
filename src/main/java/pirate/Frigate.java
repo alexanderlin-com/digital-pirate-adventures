@@ -1,3 +1,5 @@
+package pirate;
+
 public class Frigate extends Ship{
 
     public Frigate(int health, int bandwidth, int speed, int dodge, double armor, int accuracy, double damage)

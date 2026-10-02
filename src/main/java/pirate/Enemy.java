@@ -1,3 +1,5 @@
+package pirate;
+
 import java.util.Random;
 public class Enemy{
     public int speed = 0;
