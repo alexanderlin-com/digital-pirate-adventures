@@ -1,0 +1,19 @@
+# Compiled sources
+*.class
+
+# Build output
+/out/
+/target/
+/build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS cruft
+.DS_Store
+
+.claude/
