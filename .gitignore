@@ -2,9 +2,13 @@
 *.class
 
 # Build output
-/out/
-/target/
-/build/
+out/
+target/
+build/
+
+# Go build output
+/pirateadventure
+/pirateadventure.exe
 
 # IDE
 .idea/

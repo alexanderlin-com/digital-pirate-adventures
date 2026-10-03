@@ -4,6 +4,8 @@ Welcome to **Digital Pirate Adventures**, a thrilling text-based game that takes
 
 **Notice**: The latest commit in this branch contains experimental changes and unfinished content. I'm working hard to improve the game and appreciate your patience.
 
+**Rewrite in progress**: the active version is being rewritten in Go with [Bubble Tea](https://github.com/charmbracelet/bubbletea) for a terminal UI. The original Java version still lives under [`legacy-java/`](legacy-java/) as the reference it's being rebuilt from.
+
 If you'd like to try out the latest features and provide feedback, feel free to continue with this version. However, please be aware that while I've done the best I can to ensure there aren't any errors, there is missing content. Also I likely won't have much time to work on the game during the school semester, as I tend to spend most of my time studying and working on class projects. I greatly appreciate your patience.
 
 Thank you for your understanding and support!
@@ -23,22 +25,19 @@ Thank you for your understanding and support!
 ## How to Play
 
 1. Clone this repository to your local machine.
-2. Open the project in your IDE of choice (source lives under `src/main/java/pirate`), or build and run it with Maven:
+2. Build and run the active Go version from the repo root:
    ```
-   mvn compile exec:java
-   ```
-   Or without Maven:
-   ```
-   javac -d out src/main/java/pirate/*.java
-   java -cp out pirate.Main
+   go run .
    ```
 3. Follow the given prompts to make choices and progress through the adventure.
 4. Have fun (mandatory).
 
+For the original Java version, see [`legacy-java/`](legacy-java/) — build and run it with Maven (`mvn compile exec:java` from that directory).
+
 ## Running Tests
 
 ```
-mvn test
+go test ./...
 ```
 
 ## Disclaimer
